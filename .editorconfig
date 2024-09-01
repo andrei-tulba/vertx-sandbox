@@ -1,0 +1,16 @@
+root = true
+
+[*.{apt}]
+charset = utf-8
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+
+[*.{bat,cmd,ps1}]
+end_of_line = crlf
+
+[Makefile]
+indent_style = tab
+indent_size = 4

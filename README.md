@@ -23,7 +23,16 @@ management for Vert.x.
 The module `pom.xml` file inherits from the parent `pom.xml` and defines the specific configuration
 for the `vertx-web-bug` module.
 
-## Installation Instructions :rocket:
+## :zap: Get started
+
+### Prerequisites :heavy_check_mark:
+
+* Java 21 or higher
+* Git
+* [pre-commit](https://pre-commit.com)
+* [EditorConfig](https://editorconfig.org) for your IDE
+
+### Installation Instructions :rocket:
 
 To install and run the vertx-sandbox project, follow these steps:
 
@@ -33,8 +42,11 @@ To install and run the vertx-sandbox project, follow these steps:
 git clone https://github.com/vertx-sandbox.git
 cd vertx-sandbox
 ```
-
-2. Build the project using Maven:  
+2. Install pre-commit hooks:
+```bash
+pre-commit install -t pre-commit -t commit-msg
+```
+2. Build the project using Maven:
 ```bash
 ./mvnw clean install
 ```
